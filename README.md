@@ -72,7 +72,7 @@ the [old](https://docs.python.org/2/library/stdtypes.html#string-formatting) sty
 
 * Python v2.x (2.6 or later)
 * PyEphem
-* TeX/LaTeX&nbsp;&nbsp;or&nbsp;&nbsp;MiKTeX
+* TeX/LaTeX&nbsp;&nbsp;or&nbsp;&nbsp;MiKTeX&nbsp;&nbsp;or&nbsp;&nbsp;TeX Live
 
 &nbsp;&nbsp;&nbsp;&nbsp;**DEPRECATION:** Python 2.7 will reach the end of its life on January 1st, 2020.  
 &nbsp;&nbsp;&nbsp;&nbsp;Please upgrade your Python as Python 2.7 won't be maintained after that date.  
@@ -82,6 +82,7 @@ the [old](https://docs.python.org/2/library/stdtypes.html#string-formatting) sty
 ### INSTALLATION GUIDELINES on Windows 10:
 
 &nbsp;&nbsp;&nbsp;&nbsp;Install Python 2.7 and MiKTeX from https://miktex.org/  
+&nbsp;&nbsp;&nbsp;&nbsp;When MiKTeX first runs it will require installation of additional packages.  
 &nbsp;&nbsp;&nbsp;&nbsp;Run Command Prompt as Administrator, go to your Python Scripts folder and execute, e.g.:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**cd C:\\Python27\\Scripts**  
@@ -96,18 +97,20 @@ the [old](https://docs.python.org/2/library/stdtypes.html#string-formatting) sty
 &nbsp;&nbsp;&nbsp;&nbsp;**py -2 pyalmanac.py**
 
 
-### INSTALLATION GUIDELINES on Linux:
+### INSTALLATION GUIDELINES on Ubuntu 18.04:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install your platform's Python- and LaTeX distribution.  
-&nbsp;&nbsp;&nbsp;&nbsp;Remember to choose python 2.7 minimum and install all development header files.  
-&nbsp;&nbsp;&nbsp;&nbsp;Run at the command line:
+&nbsp;&nbsp;&nbsp;&nbsp;Ubuntu 18 and earlier come with Python 2 preinstalled,  
+&nbsp;&nbsp;&nbsp;&nbsp;however pip may need to be installed:  
+&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install python-pip**
 
+&nbsp;&nbsp;&nbsp;&nbsp;Install the following TeX Live package:  
+&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install texlive-latex-extra**
+
+&nbsp;&nbsp;&nbsp;&nbsp;Install the required astronomical library:  
 &nbsp;&nbsp;&nbsp;&nbsp;**pip install pyephem**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in any directory and start with:  
-&nbsp;&nbsp;&nbsp;&nbsp;**python pyalmanac**  
-&nbsp;&nbsp;&nbsp;&nbsp;or  
-&nbsp;&nbsp;&nbsp;&nbsp;**./pyalmanac**
+&nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in a folder and start with:  
+&nbsp;&nbsp;&nbsp;&nbsp;**python pyalmanac.py**  
 
 
 ### INSTALLATION GUIDELINES on MAC:

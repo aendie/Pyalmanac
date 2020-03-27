@@ -124,8 +124,10 @@ if s in set(['1', '2', '3', '4']):
             os.system(command)
             print("finished creating nautical almanac for {}".format(year))
             os.remove(filename)
-            os.remove("almanac{}{}.log".format(ff,year+DecFmt))
-            os.remove("almanac{}{}.aux".format(ff,year+DecFmt))
+            if os.path.isfile("almanac{}{}.log".format(ff,symd+DecFmt)):
+                os.remove("almanac{}{}.log".format(ff,year+DecFmt))
+            if os.path.isfile("almanac{}{}.aux".format(ff,symd+DecFmt)):
+                os.remove("almanac{}{}.aux".format(ff,year+DecFmt))
 
     elif s == '2':
         for yearint in range(int(yearfr),int(yearto)+1):
@@ -141,8 +143,10 @@ if s in set(['1', '2', '3', '4']):
             os.system(command)
             print("finished creating sun tables for {}".format(year))
             os.remove(filename)
-            os.remove("sunalmanac{}{}.log".format(ff,year+DecFmt))
-            os.remove("sunalmanac{}{}.aux".format(ff,year+DecFmt))
+            if os.path.isfile("sunalmanac{}{}.log".format(ff,symd+DecFmt)):
+                os.remove("sunalmanac{}{}.log".format(ff,year+DecFmt))
+            if os.path.isfile("sunalmanac{}{}.aux".format(ff,symd+DecFmt)):
+                os.remove("sunalmanac{}{}.aux".format(ff,year+DecFmt))
 
     elif s == '3':
 ##        config.init()		# initialize log file
@@ -159,8 +163,10 @@ if s in set(['1', '2', '3', '4']):
         os.system(command)
         print("finished")
         os.remove(filename)
-        os.remove("almanac{}{}.log".format(ff,symd+DecFmt))
-        os.remove("almanac{}{}.aux".format(ff,symd+DecFmt))
+        if os.path.isfile("almanac{}{}.log".format(ff,symd+DecFmt)):
+            os.remove("almanac{}{}.log".format(ff,symd+DecFmt))
+        if os.path.isfile("almanac{}{}.aux".format(ff,symd+DecFmt)):
+            os.remove("almanac{}{}.aux".format(ff,symd+DecFmt))
 
     elif s == '4':
         msg = "\nCreating the sun tables only - from {}".format(sdmy)
@@ -173,7 +179,9 @@ if s in set(['1', '2', '3', '4']):
         os.system(command)
         print("finished")
         os.remove(filename)
-        os.remove("sunalmanac{}{}.log".format(ff,symd+DecFmt))
-        os.remove("sunalmanac{}{}.aux".format(ff,symd+DecFmt))
+        if os.path.isfile("sunalmanac{}{}.log".format(ff,symd+DecFmt)):
+            os.remove("sunalmanac{}{}.log".format(ff,symd+DecFmt))
+        if os.path.isfile("sunalmanac{}{}.aux".format(ff,symd+DecFmt)):
+            os.remove("sunalmanac{}{}.aux".format(ff,symd+DecFmt))
 else:
     print("Error! Choose 1, 2, 3 or 4")
