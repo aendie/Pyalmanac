@@ -101,7 +101,7 @@ the [old](https://docs.python.org/2/library/stdtypes.html#string-formatting) sty
 
 &nbsp;&nbsp;&nbsp;&nbsp;Ubuntu 18 and earlier come with Python 2 preinstalled,  
 &nbsp;&nbsp;&nbsp;&nbsp;however pip may need to be installed:  
-&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install python-pip**
+&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install python-pip**  
 &nbsp;&nbsp;&nbsp;&nbsp;Note: Ubuntu 20.04 comes with Python 3 preinstalled, which is preferable to Python 2.
 
 &nbsp;&nbsp;&nbsp;&nbsp;Install the following TeX Live package:  
