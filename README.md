@@ -68,7 +68,7 @@ the [old](https://docs.python.org/2/library/stdtypes.html#string-formatting) sty
 ## Requirements
 
 &nbsp;&nbsp;&nbsp;&nbsp;Most of the computation is done by the free Pyephem library.  
-&nbsp;&nbsp;&nbsp;&nbsp;Typesetting is done by LaTeX or MiKTeX so you first need to install:
+&nbsp;&nbsp;&nbsp;&nbsp;Typesetting is done by MiKTeX or TeX Live so you first need to install:
 
 * Python v2.x (2.6 or later)
 * PyEphem
