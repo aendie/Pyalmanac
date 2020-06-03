@@ -2,7 +2,7 @@
 
 **'End of Life' ANNOUNCEMENT**
 
-Pyalmanac is nearing the end of its useful days. Almanacs generated after the next few
+Pyalmanac is nearing the end of its useful days. Almanacs generated after the next few 
 years should not be used for navigational purposes. SFalmanac (or Skyalmanac with
 some restrictions regarding the accuracy of sunset/twilight/sunrise and moonrise/moonset)
 are the new norm as these are based on the more accurate algorithms currently employed
