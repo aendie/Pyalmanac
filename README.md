@@ -98,7 +98,7 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 &nbsp;&nbsp;&nbsp;&nbsp;Typesetting is done by MiKTeX or TeX Live so you first need to install:
 
 * Python v2.x (2.6 or later)
-* PyEphem
+* Ephem
 * TeX/LaTeX&nbsp;&nbsp;or&nbsp;&nbsp;MiKTeX&nbsp;&nbsp;or&nbsp;&nbsp;TeX Live
 
 &nbsp;&nbsp;&nbsp;&nbsp;**DEPRECATION:** Python 2.7 will reach the end of its life on January 1st, 2020.  
@@ -113,14 +113,18 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 
 ### INSTALLATION GUIDELINES on Windows 10:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install Python 2.7 and MiKTeX from https://miktex.org/  
+&nbsp;&nbsp;&nbsp;&nbsp;Install Python 2.7 (do not add python.exe to path)  
+&nbsp;&nbsp;&nbsp;&nbsp;Install MiKTeX 20.11 from https://miktex.org/  
 &nbsp;&nbsp;&nbsp;&nbsp;When MiKTeX first runs it will require installation of additional packages.  
 &nbsp;&nbsp;&nbsp;&nbsp;Run Command Prompt as Administrator, go to your Python Scripts folder and execute, e.g.:
 
 &nbsp;&nbsp;&nbsp;&nbsp;**cd C:\\Python27\\Scripts**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install pyephem**
+&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
+&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**
 
-&nbsp;&nbsp;&nbsp;&nbsp;NOTE: if Python 3 is already installed, you need to be in the Scripts folder - otherwise the Py3 version of pip will execute.
+&nbsp;&nbsp;&nbsp;&nbsp;NOTE: if Python 3 is already installed, you need to be in the Scripts folder - otherwise the Py3 version of pip will execute.  
+&nbsp;&nbsp;&nbsp;&nbsp;NOTE: you may get the following error:  
+&nbsp;&nbsp;&nbsp;&nbsp;**error: Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27**
 
 &nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in a new folder, run Command Prompt and start with:  
 &nbsp;&nbsp;&nbsp;&nbsp;**python.exe pyalmanac.py**
@@ -140,7 +144,8 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 &nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install texlive-latex-extra**
 
 &nbsp;&nbsp;&nbsp;&nbsp;Install the required astronomical library:  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install pyephem**
+&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
+&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**
 
 &nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in a folder and start with:  
 &nbsp;&nbsp;&nbsp;&nbsp;**python pyalmanac.py**  
@@ -154,7 +159,8 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 &nbsp;&nbsp;&nbsp;&nbsp;Type the following commands at the commandline (terminal app):
 
 &nbsp;&nbsp;&nbsp;&nbsp;**sudo easy_install pip**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install pyephem**
+&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
+&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**  
 
 &nbsp;&nbsp;&nbsp;&nbsp;If this command fails, your Mac asks you if you would like to install the header files.  
 &nbsp;&nbsp;&nbsp;&nbsp;Do so - you do not need to install the full IDE - and try again.
