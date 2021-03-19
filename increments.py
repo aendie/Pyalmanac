@@ -19,7 +19,10 @@
 
 import sys
 import os
-from math import *
+from math import pi as pi
+from math import cos as cos
+from math import tan as tan
+from math import sqrt as sqrt
 
 def degmin(deg):
     #changes decimal degrees to the format usually used in the nautical almanac. (ddd°mm.m')

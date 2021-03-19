@@ -11,7 +11,7 @@ in the NASA JPL HORIZONS System (the same algorithms are implemented in Skyfield
 Pyalmanac is implemented using Ephem (originally named PyEphem), which in turn uses XEphem that is based on the
 VSOP87D algorithms. XEphem is also 'end of life' as no further updates are planned,
 however the major discrepancies are related to the projected speed of Earth's rotation.
-The discrepancies in GHA between Ephem and Skyfield 1.31 can be summarized thus:
+The discrepancies in GHA between Ephem and Skyfield 1.31 (both UTC-time based) can be summarized thus:
 
 * in 2020:&nbsp;&nbsp; 00.0 to 00.1 arcMINUTES GHA too high
 * in 2030:&nbsp;&nbsp; 04.0 to 04.8 arcMINUTES GHA too high
@@ -23,13 +23,15 @@ The GHA discrepancy applies to the sun, moon, the First Point of Aries and to al
 
 **Description**
 
-Pyalmanac is a Python 2.7 script that creates the daily pages of the Nautical Almanac. These are tables that are needed for celestial navigation with a sextant. Although you are strongly advised to purchase the official Nautical Almanac, this program will reproduce the tables with no warranty or guarantee of accuracy.
+Pyalmanac is a Python 2.7 script that creates the daily pages of the Nautical Almanac **using the UTC timescale**, which is ***not optimal for navigation purposes.*** :frowning_face: Official Nautical Almanacs employ a UT timescale (equivalent to UT1).
+(UTC is the basis for the worldwide system of civil time.)
+These are tables that are needed for celestial navigation with a sextant. Although you are strongly advised to purchase the official Nautical Almanac, this program will reproduce the tables with no warranty or guarantee of accuracy.
 
 Pyalmanac-Py2 was developed based on the original Pyalmanac by Enno Rodegerdts. Various improvements, enhancements and bugfixes (listed below) are implemented. Pyalmanac contains its own star database (similar to the database in Ephem 3.7.6), however the accuracy was poor. It is updated with data from the Hipparcos Star Catalogue and the GHA/Dec star data now matches a sample page from a Nautical Almanac exactly or at the most is within 0°0.1', which is very good.
 
 NOTE: two scripts are included (both can be run): 'pyalmanac.py' and 'increments.py'  
 NOTE: Pyalmanac contains its own star database - it does not use the version supplied with Ephem, hence updating from 3.7.6 to 3.7.7.1 is harmless. Star names are chosen to comply with Nautical Almanacs.  
-NOTE: a Python 3 script with identical functionality can be found at: https://github.com/aendie/Pyalmanac-Py3  
+NOTE: a Python 3 script with similar functionality can be found at: https://github.com/aendie/Pyalmanac-Py3  
 NOTE: a [Skyfield](https://rhodesmill.org/skyfield/) version of Pyalmanac is available here: https://github.com/aendie/SFalmanac-Py2
 
 This fork of the original code, which can be found at https://github.com/rodegerdts/Pyalmanac, in general includes:
@@ -95,15 +97,16 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 ## Requirements
 
 &nbsp;&nbsp;&nbsp;&nbsp;Most of the computation is done by the free Ephem library.  
-&nbsp;&nbsp;&nbsp;&nbsp;Typesetting is done by MiKTeX or TeX Live so you first need to install:
+&nbsp;&nbsp;&nbsp;&nbsp;Typesetting is typically done by MiKTeX or TeX Live.  
+&nbsp;&nbsp;&nbsp;&nbsp;These need to be installed:
 
 * Python v2.x (2.6 or later)
 * Ephem
-* TeX/LaTeX&nbsp;&nbsp;or&nbsp;&nbsp;MiKTeX&nbsp;&nbsp;or&nbsp;&nbsp;TeX Live
+* MiKTeX&nbsp;&nbsp;or&nbsp;&nbsp;TeX Live
 
-&nbsp;&nbsp;&nbsp;&nbsp;**DEPRECATION:** Python 2.7 will reach the end of its life on January 1st, 2020.  
-&nbsp;&nbsp;&nbsp;&nbsp;Please upgrade your Python as Python 2.7 won't be maintained after that date.  
-&nbsp;&nbsp;&nbsp;&nbsp;A future version of pip will drop support for Python 2.7.
+&nbsp;&nbsp;&nbsp;&nbsp;**DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020.**  
+&nbsp;&nbsp;&nbsp;&nbsp;**Please upgrade your Python as Python 2.7 is no longer maintained.**  
+&nbsp;&nbsp;&nbsp;&nbsp;**pip 21.0 dropped support for Python 2.7 in January 2021.**
 
 ## Files required in the execution folder:
 
