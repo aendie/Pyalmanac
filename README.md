@@ -13,11 +13,11 @@ VSOP87D algorithms. XEphem is also 'end of life' as no further updates are plann
 however the major discrepancies are related to the projected speed of Earth's rotation.
 The discrepancies in GHA between Ephem and Skyfield 1.31 (both UTC-time based) can be summarized thus:
 
-* in 2020:&nbsp;&nbsp; 00.0 to 00.1 arcMINUTES GHA too high
-* in 2030:&nbsp;&nbsp; 04.0 to 04.8 arcMINUTES GHA too high
-* in 2050:&nbsp;&nbsp; 13.9 to 14.9 arcMINUTES GHA too high
-* in 2100:&nbsp;&nbsp; 38.0 to 40.2 arcMINUTES GHA too high
-* in 2200:&nbsp;&nbsp; 90.1 to 94.1 arcMINUTES GHA too high
+* in 2020:&ensp; 00.0 to 00.1 arcMINUTES GHA too high
+* in 2030:&ensp; 04.0 to 04.8 arcMINUTES GHA too high
+* in 2050:&ensp; 13.9 to 14.9 arcMINUTES GHA too high
+* in 2100:&ensp; 38.0 to 40.2 arcMINUTES GHA too high
+* in 2200:&ensp; 90.1 to 94.1 arcMINUTES GHA too high
 
 The GHA discrepancy applies to the sun, moon, the First Point of Aries and to all planets.
 
@@ -96,17 +96,17 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 
 ## Requirements
 
-&nbsp;&nbsp;&nbsp;&nbsp;Most of the computation is done by the free Ephem library.  
-&nbsp;&nbsp;&nbsp;&nbsp;Typesetting is typically done by MiKTeX or TeX Live.  
-&nbsp;&nbsp;&nbsp;&nbsp;These need to be installed:
+&emsp;Most of the computation is done by the free Ephem library.  
+&emsp;Typesetting is typically done by MiKTeX or TeX Live.  
+&emsp;These need to be installed:
 
 * Python v2.x (2.6 or later)
 * Ephem
-* MiKTeX&nbsp;&nbsp;or&nbsp;&nbsp;TeX Live
+* MiKTeX&ensp;or&ensp;TeX Live
 
-&nbsp;&nbsp;&nbsp;&nbsp;**DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020.**  
-&nbsp;&nbsp;&nbsp;&nbsp;**Please upgrade your Python as Python 2.7 is no longer maintained.**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip 21.0 dropped support for Python 2.7 in January 2021.**
+&emsp;**DEPRECATION: Python 2.7 reached the end of its life on January 1st, 2020.**  
+&emsp;**Please upgrade your Python as Python 2.7 is no longer maintained.**  
+&emsp;**pip 21.0 dropped support for Python 2.7 in January 2021.**
 
 ## Files required in the execution folder:
 
@@ -116,61 +116,61 @@ The Equation Of Time is shaded whenever EoT is negative indicating that apparent
 
 ### INSTALLATION GUIDELINES on Windows 10:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install Python 2.7 (do not add python.exe to path)  
-&nbsp;&nbsp;&nbsp;&nbsp;Install MiKTeX 20.11 from https://miktex.org/  
-&nbsp;&nbsp;&nbsp;&nbsp;When MiKTeX first runs it will require installation of additional packages.  
-&nbsp;&nbsp;&nbsp;&nbsp;Run Command Prompt as Administrator, go to your Python Scripts folder and execute, e.g.:
+&emsp;Install Python 2.7 (do not add python.exe to path)  
+&emsp;Install MiKTeX 20.11 from https://miktex.org/  
+&emsp;When MiKTeX first runs it will require installation of additional packages.  
+&emsp;Run Command Prompt as Administrator, go to your Python Scripts folder and execute, e.g.:
 
-&nbsp;&nbsp;&nbsp;&nbsp;**cd C:\\Python27\\Scripts**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**
+&emsp;**cd C:\\Python27\\Scripts**  
+&emsp;**pip uninstall pyephem**  
+&emsp;**pip install ephem**
 
-&nbsp;&nbsp;&nbsp;&nbsp;NOTE: if Python 3 is already installed, you need to be in the Scripts folder - otherwise the Py3 version of pip will execute.  
-&nbsp;&nbsp;&nbsp;&nbsp;NOTE: you may get the following error:  
-&nbsp;&nbsp;&nbsp;&nbsp;**error: Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27**
+&emsp;NOTE: if Python 3 is already installed, you need to be in the Scripts folder - otherwise the Py3 version of pip will execute.  
+&emsp;NOTE: you may get the following error:  
+&emsp;**error: Microsoft Visual C++ 9.0 is required. Get it from http://aka.ms/vcpython27**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in a new folder, run Command Prompt and start with:  
-&nbsp;&nbsp;&nbsp;&nbsp;**python.exe pyalmanac.py**
+&emsp;Put the Pyalmanac files in a new folder, run Command Prompt and start with:  
+&emsp;**python.exe pyalmanac.py**
 
-&nbsp;&nbsp;&nbsp;&nbsp;However, if Python 3 is also installed, start with:  
-&nbsp;&nbsp;&nbsp;&nbsp;**py -2 pyalmanac.py**
+&emsp;However, if Python 3 is also installed, start with:  
+&emsp;**py -2 pyalmanac.py**
 
 
 ### INSTALLATION GUIDELINES on Ubuntu 18.04:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Ubuntu 18 and earlier come with Python 2 preinstalled,  
-&nbsp;&nbsp;&nbsp;&nbsp;however pip may need to be installed:  
-&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install python-pip**  
-&nbsp;&nbsp;&nbsp;&nbsp;Note: Ubuntu 20.04 comes with Python 3 preinstalled, which is preferable to Python 2.
+&emsp;Ubuntu 18 and earlier come with Python 2 preinstalled,  
+&emsp;however pip may need to be installed:  
+&emsp;**sudo apt install python-pip**  
+&emsp;Note: Ubuntu 20.04 comes with Python 3 preinstalled, which is preferable to Python 2.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install the following TeX Live package:  
-&nbsp;&nbsp;&nbsp;&nbsp;**sudo apt install texlive-latex-extra**
+&emsp;Install the following TeX Live package:  
+&emsp;**sudo apt install texlive-latex-extra**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install the required astronomical library:  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**
+&emsp;Install the required astronomical library:  
+&emsp;**pip uninstall pyephem**  
+&emsp;**pip install ephem**
 
-&nbsp;&nbsp;&nbsp;&nbsp;Put the Pyalmanac files in a folder and start with:  
-&nbsp;&nbsp;&nbsp;&nbsp;**python pyalmanac.py**  
+&emsp;Put the Pyalmanac files in a folder and start with:  
+&emsp;**python pyalmanac.py**  
 
 
 ### INSTALLATION GUIDELINES on MAC:
 
-&nbsp;&nbsp;&nbsp;&nbsp;Every Mac comes with python preinstalled.  
-&nbsp;&nbsp;&nbsp;&nbsp;(Please choose the Python 3 version of Pyalmanac if Python 3.* is installed.)  
-&nbsp;&nbsp;&nbsp;&nbsp;You need to install the PyEphem library to use Pyalmanac.  
-&nbsp;&nbsp;&nbsp;&nbsp;Type the following commands at the commandline (terminal app):
+&emsp;Every Mac comes with python preinstalled.  
+&emsp;(Please choose the Python 3 version of Pyalmanac if Python 3.* is installed.)  
+&emsp;You need to install the PyEphem library to use Pyalmanac.  
+&emsp;Type the following commands at the commandline (terminal app):
 
-&nbsp;&nbsp;&nbsp;&nbsp;**sudo easy_install pip**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip uninstall pyephem**  
-&nbsp;&nbsp;&nbsp;&nbsp;**pip install ephem**  
+&emsp;**sudo easy_install pip**  
+&emsp;**pip uninstall pyephem**  
+&emsp;**pip install ephem**  
 
-&nbsp;&nbsp;&nbsp;&nbsp;If this command fails, your Mac asks you if you would like to install the header files.  
-&nbsp;&nbsp;&nbsp;&nbsp;Do so - you do not need to install the full IDE - and try again.
+&emsp;If this command fails, your Mac asks you if you would like to install the header files.  
+&emsp;Do so - you do not need to install the full IDE - and try again.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Install TeX/LaTeX from http://www.tug.org/mactex/
+&emsp;Install TeX/LaTeX from http://www.tug.org/mactex/
 
-&nbsp;&nbsp;&nbsp;&nbsp;Now you are almost ready. Put the Pyalmanac files in any directory and start with:  
-&nbsp;&nbsp;&nbsp;&nbsp;**python pyalmanac**  
-&nbsp;&nbsp;&nbsp;&nbsp;or  
-&nbsp;&nbsp;&nbsp;&nbsp;**./pyalmanac**
+&emsp;Now you are almost ready. Put the Pyalmanac files in any directory and start with:  
+&emsp;**python pyalmanac**  
+&emsp;or  
+&emsp;**./pyalmanac**
