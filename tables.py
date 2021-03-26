@@ -839,8 +839,8 @@ def almanac(first_day, pagenum):
         rm1 = "10mm"
         tm = "21mm"     # data pages...
         bm = "18mm"
-        lm = "12mm"
-        rm = "8mm"
+        lm = "10mm"
+        rm = "9mm"
         if config.tbls == "m":
             tm = "10mm"
             bm = "15mm"
