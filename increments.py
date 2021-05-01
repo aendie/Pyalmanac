@@ -261,7 +261,7 @@ def makelatex():
 	lx = r"""\documentclass[ 10pt, twoside, a4paper]{scrreprt}
 	\usepackage[automark]{scrlayer-scrpage}
 	\pagestyle{scrheadings}
-	\clearscrheadfoot
+	\clearpairofpagestyles
 	\chead{\large \textbf{Increments and Corrections}}
     \usepackage[utf8]{inputenc}
     \usepackage[english]{babel}

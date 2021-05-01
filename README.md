@@ -15,18 +15,18 @@ However the key discrepancies are related to the projected speed of Earth's rota
 Skyfield-based almanacs (SFalmanac and Skyalmanac) now use the International Earth Rotation and Reference 
 Systems Service (IERS) Earth Orientation Parameters (EOP) data which are forecast for at least the coming 
 12 months (and updated weekly). Accurate assessment of "sidereal time" will minimize GHA 
-discrepancies in general. This applies to the sun, moon, the First Point of Aries and to all planets.
+discrepancies in general. This applies to to all celestial objects.
 
 **Description**
 
-Pyalmanac is a Python 2.7 script that creates the daily pages of the Nautical Almanac **using the UTC timescale**, which is ***not optimal for navigation purposes*** :frowning_face:. 
+Pyalmanac is a Python 2.7 script that essentially creates the daily pages of the Nautical Almanac **using the UTC timescale**, which is ***not optimal for navigation purposes*** :frowning_face:. 
 Official Nautical Almanacs employ a UT timescale (equivalent to UT1). UTC is the basis for the worldwide system of civil time.
 The "daily pages" are tables that are needed for celestial navigation with a sextant. 
 Although you are strongly advised to purchase the official Nautical Almanac, this program will reproduce the tables with no warranty or guarantee of accuracy.
 
 Pyalmanac-Py2 was developed based on the original Pyalmanac by Enno Rodegerdts. Various improvements, enhancements and bugfixes (listed below) have been included. 
-Pyalmanac contains its own star database (similar to the database in Ephem 3.7.6, however the accuracy was poor). 
-It is updated with data from the Hipparcos Star Catalogue and the GHA/Dec star data now matches a sample page from a Nautical Almanac exactly or at the most is within 0°0.1'.
+Pyalmanac contains its own star database (similar to the database in Ephem 3.7.6 whose accuracy was sub-optimal).
+It is updated with data from the Hipparcos Star Catalogue and the GHA/Dec star data now matches a sample page from a Nautical Almanac typically to within 0°0.1'.
 
 NOTE: two scripts are included (both can be run): 'pyalmanac.py' and 'increments.py'  
 NOTE: Pyalmanac contains its own star database - it does not use the version supplied with Ephem, hence updating from 3.7.6 to 3.7.7.1 is harmless. Star names are chosen to comply with Nautical Almanacs.  
